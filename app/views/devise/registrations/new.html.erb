@@ -1,0 +1,35 @@
+<body>
+    <header>
+        <h1 class="header-logo"><a href="#">Chronicle</a></h1>
+    </header>
+    <main>
+        <div class="top-page">
+            <%# <video src="/aseets/videos/video.mp4" autoplay muted loop class="main-video"></video> %>
+            <%= video_tag "/videos/video.mp4", autoplay: :true, loop: :true, muted: :true, class:"main-video" %>
+            <form class="signup-form">
+                <h2>Sign up</h2>
+                <label for="name">●nameを入力</label>
+                <input type="text" id="name" name="name">
+                <label for="nickname">●nicknameを入力</label>
+                <input type="text" id="nickname" name="nickname">
+                <label for="email">●メールアドレスを入力</label>
+                <input type="text" name="email" id="email">
+                <label for="password">●passwordを入力</label>
+                <input type="text" id="password" name="password">
+                <label for="password_confirmation">●passwordを再度入力＜確認＞</label>
+                <input type="text" id="password_confirmation" name="password_confirmation">
+                <input type="submit" value="Enter" id="submit-btn">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <ul class="footer-list">
+            <li><a href="#">テキスト</a></li>
+            <li><a href="#">テキスト</a></li>
+            <li><a href="#">テキスト</a></li>
+        </ul>
+        <div class="copy-light">
+            <p>&copy;Chronicle</p>
+        </div>
+    </footer>     
+</body>

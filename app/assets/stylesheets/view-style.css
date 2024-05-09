@@ -1,0 +1,5 @@
+.main-visual {
+    background-image: url("background-image.jpg");
+    background-size: cover;
+    height: 1500px;
+}
