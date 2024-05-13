@@ -1,10 +1,10 @@
 require "date"
 module Count
     MOON = [1,3,5,7,8,10,12]
-    WEEKDAY = 7
+    
 
     # 今月が何日まであるか
-    def this_month_last_day(month,year)
+    def this_month_last_day(year,month)
         if MOON.include?(month)
             31
         elsif month == 2 && (year % 4 === 0)
